@@ -35,9 +35,8 @@ jobs:
         run: npm run build
         working-directory: frontend
         env:
-          # Sets the asset base path to the repo name.
-          # Change to '/' if you configure a custom domain in GitHub Pages.
-          VITE_BASE_PATH: /Janus-Coin/
+          # Custom domain is configured, so assets are served from root.
+          VITE_BASE_PATH: /
 
       - uses: actions/upload-pages-artifact@v3
         with:
