@@ -1,0 +1,44 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+*.pyc
+__pycache__/
+*.egg-info/
+*.egg
+.mypy_cache/
+.coverage
+.venv/
+
+# ── Node ─────────────────────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+
+# ── Build artefacts ──────────────────────────────────────────────────────────
+dist/
+build/
+
+# ── Terraform ────────────────────────────────────────────────────────────────
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/terraform.tfvars
+
+# ── Secrets & env ────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+backend/.env
+
+# ── Editors & OS ─────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+.DS_Store
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ── Claude Code ──────────────────────────────────────────────────────────────
+.claude/
